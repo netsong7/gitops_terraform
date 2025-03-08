@@ -6,7 +6,7 @@ variable "region" {
 }
 
 variable "cluster_name" {
-  default = "<Cluster_이름>"  # EKS 클러스터 이름
+  default = "fs-petclinic"  # EKS 클러스터 이름
 }
 
 variable "vpc_cidr" {
@@ -27,7 +27,7 @@ variable "public_subnets" {
 
 
 variable "cluster_version" {
-  default = "1.30"    # EKS 클러스터 버전
+  default = "1.32"    # EKS 클러스터 버전
 }
 
 variable "namespace" {
@@ -79,5 +79,5 @@ variable "aws_auth_users" {
 variable "bastion_key_name" {
   description = "The key name of the Key Pair to use for the bastion instance"
   type        = string
-  default     = "<로그인키_이름>"
+  default     = "bastion-gitops-key"
 }

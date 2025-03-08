@@ -20,8 +20,8 @@ echo "[default]" > /home/ubuntu/.aws/config
 echo "region = ap-northeast-2" >> /home/ubuntu/.aws/config
 
 echo "Configuring kubeconfig"
-aws eks get-token --cluster-name <Cluster_이름> --region ap-northeast-2
-aws eks update-kubeconfig --name <Cluster_이름> --region ap-northeast-2
+aws eks get-token --cluster-name fs-petclinic --region ap-northeast-2
+aws eks update-kubeconfig --name fs-petclinic --region ap-northeast-2
 
 echo "Setting permissions"
 chown -R ubuntu:ubuntu /home/ubuntu/.kube /home/ubuntu/.aws
